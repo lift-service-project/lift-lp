@@ -269,7 +269,7 @@
 }
 
 .qa_section .details_sect details summary {
-  width: 70%;
+  width: 80%;
   margin: auto;
   padding: 10px 0;
   font-size: 1.6em;
@@ -468,10 +468,9 @@ footer {
   }
   .qa_section .details_sect details {
     margin: 10px 0;
-    min-height: 90px;
   }
   .qa_section .details_sect details summary {
-    width: 70%;
+    width: 90%;
     margin: auto;
     padding: 20px 0;
   }
