@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   height: 88px;
 }
@@ -212,6 +213,77 @@
   font-weight: bold;
 }
 
+.qa_section {
+  padding-top: 100px;
+  /* Chrome、Safari以外 */
+  /* Chrome、Safari */
+  /* オープン時にアニメーションを設定 */
+}
+
+.qa_section .border_size::after {
+  width: 200px;
+  height: 20px;
+  bottom: -4px;
+  left: calc(50% - 100px);
+}
+
+.qa_section summary {
+  display: block;
+}
+
+.qa_section summary::-webkit-details-marker {
+  display: none;
+}
+
+.qa_section details[open] .details-content {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    /* 透明 */
+    transform: translateY(-10px);
+    /* 上から表示 */
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.qa_section .details_wrapper {
+  display: flex;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.qa_section .details_sect {
+  width: 48%;
+  margin: 10px auto;
+}
+
+.qa_section .details_sect details {
+  background-color: #f1e8e3;
+  margin: 10px 0;
+}
+
+.qa_section .details_sect details summary {
+  width: 70%;
+  margin: auto;
+  padding: 10px 0;
+  font-size: 1.6em;
+}
+
+.qa_section .details_sect details .details-content {
+  width: 80%;
+  margin: auto;
+}
+
+.qa_section .details_sect details .details-content p {
+  font-size: 1.6rem;
+}
+
 .person_section {
   padding-top: 200px;
   font-size: 16px;
@@ -353,6 +425,59 @@ footer {
   }
   .slider_section a.btn-c {
     min-width: 250px;
+  }
+  .qa_section {
+    padding-top: 100px;
+    /* Chrome、Safari以外 */
+    /* Chrome、Safari */
+    /* オープン時にアニメーションを設定 */
+  }
+  .qa_section .border_size::after {
+    width: 200px;
+    height: 20px;
+    bottom: -4px;
+    left: calc(50% - 100px);
+  }
+  .qa_section summary {
+    display: block;
+  }
+  .qa_section summary::-webkit-details-marker {
+    display: none;
+  }
+  .qa_section details[open] .details-content {
+    animation: fadeIn 0.5s ease;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      /* 透明 */
+      transform: translateY(-10px);
+      /* 上から表示 */
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  .qa_section .details_wrapper {
+    display: block;
+  }
+  .qa_section .details_sect {
+    width: 90%;
+    margin: 10px auto;
+  }
+  .qa_section .details_sect details {
+    margin: 10px 0;
+    min-height: 90px;
+  }
+  .qa_section .details_sect details summary {
+    width: 70%;
+    margin: auto;
+    padding: 20px 0;
+  }
+  .qa_section .details_sect details .details-content {
+    width: 80%;
+    margin: auto;
   }
   .person_section {
     padding-top: 100px;
