@@ -105,7 +105,7 @@
     }
 
     .arrow {
-      figure {
+      picture {
         width: 50%;
         margin: auto;
       }
@@ -332,6 +332,9 @@ footer {
     }
 
     .flow_wrapper {
+      display: flex;
+      flex-direction: column;
+
       div:first-child {
         figure {
           img {
@@ -347,20 +350,34 @@ footer {
       }
 
       div {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
         p {
           font-size: 1.4rem;
         }
       }
 
       .arrow {
-        figure {
+        picture {
+          display: flex;
+          justify-content: left;
+          width: 80%;
         }
       }
 
       .imgIcon {
         figure {
+          width: 30%;
           img {
           }
+        }
+        p {
+          width: 70%;
+          text-align: left;
+          text-indent: 5rem;
         }
       }
     }
