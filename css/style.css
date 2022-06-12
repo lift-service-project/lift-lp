@@ -231,6 +231,11 @@
   display: block;
 }
 
+.qa_section summary p {
+  display: flex;
+  justify-content: space-between;
+}
+
 .qa_section summary::-webkit-details-marker {
   display: none;
 }
@@ -280,8 +285,12 @@
   margin: auto;
 }
 
-.qa_section .details_sect details .details-content p {
-  font-size: 1.6rem;
+.qa_section .details_sect details .details-content div {
+  padding: 10px 0;
+}
+
+.qa_section .details_sect details .details-content div p {
+  font-size: 1.4rem;
 }
 
 .person_section {
