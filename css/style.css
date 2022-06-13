@@ -1,12 +1,60 @@
 @charset "UTF-8";
 .header {
   height: 88px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .header .wrapper {
   height: 100%;
   width: 90%;
   margin: auto;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .wrapper a.btn--green {
+  color: #fff;
+  background-color: #2bac38;
+}
+
+.header .wrapper a.btn--green:hover {
+  color: #fff;
+  background: #31bb3f;
+}
+
+.header .wrapper a.btn-c {
+  font-size: 1.6rem;
+  position: relative;
+  width: 25%;
+  padding: 10px 0;
+  min-width: 150px;
+}
+
+.header .wrapper .btn_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .wrapper .btn_link a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  max-width: 150px;
+  border-radius: 8px;
+}
+
+.header .wrapper .btn_link a span {
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding-left: 6px;
 }
 
 .header .wrapper h1 {
@@ -207,6 +255,7 @@
   justify-content: center;
   font-weight: bold;
   max-width: 300px;
+  border-radius: 8px;
 }
 
 .slider_section .btn_link a span {
@@ -348,6 +397,10 @@ footer {
 @media screen and (max-width: 480px) {
   .header {
     height: 50px;
+  }
+  .header .wrapper a.btn-c {
+    font-size: 1.4rem;
+    padding: 8px 0;
   }
   .header .wrapper h1 {
     justify-content: center;

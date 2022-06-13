@@ -1,10 +1,58 @@
 .header {
   height: 88px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.3);
 
   .wrapper {
     height: 100%;
     width: 90%;
     margin: auto;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+
+    a.btn--green {
+      color: #fff;
+      background-color: #2bac38;
+    }
+
+    a.btn--green:hover {
+      color: #fff;
+      background: #31bb3f;
+    }
+
+    a.btn-c {
+      font-size: 1.6rem;
+      position: relative;
+      width: 25%;
+      padding: 10px 0;
+      min-width: 150px;
+    }
+
+    .btn_link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        max-width: 150px;
+        border-radius: 8px;
+
+        span {
+          font-weight: bold;
+          font-size: 1.6rem;
+          padding-left: 6px;
+        }
+      }
+    }
 
     h1 {
       height: 100%;
@@ -212,6 +260,7 @@
       justify-content: center;
       font-weight: bold;
       max-width: 300px;
+      border-radius: 8px;
 
       span {
         font-weight: bold;
@@ -354,6 +403,31 @@ footer {
     height: 50px;
 
     .wrapper {
+      a.btn--green {
+
+      }
+
+      a.btn--green:hover {
+
+      }
+
+      a.btn-c {
+        font-size: 1.4rem;
+        padding: 8px 0;
+      }
+
+      .btn_link {
+
+
+        a {
+
+
+          span {
+
+          }
+        }
+      }
+
       h1 {
         justify-content: center;
         a {
