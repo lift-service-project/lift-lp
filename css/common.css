@@ -35,6 +35,41 @@ button {
      object-position: bottom;
 }
 
+.triangle__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60px;
+}
+
+.triangle_btm {
+  border-top: 24px solid #484848;
+  border-right: 24px solid transparent;
+  border-left: 24px solid transparent;
+  display: inline-block;
+}
+
+.double_triangle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+.double_triangle .triangle__wrapper {
+  width: 50%;
+}
+
 @media screen and (max-width: 480px) {
   .bordered_h2 {
     font-size: 2.4rem;

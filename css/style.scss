@@ -135,43 +135,72 @@
   }
 
   .flow_wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin: auto;
-    max-width: 700px;
     padding: 100px 0;
 
-    div {
-      width: 20%;
+    &--container {
+      width: min(90%, 800px);
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+
+      .flowItem {
+        display: flex;
+        width: 100%;
+        background-color: #dcdddd;
+
+        picture {
+          width: 40%;
+
+          img {
+            margin: 0 0 0 auto;
+            padding: 10px 30px 10px 10px;
+            box-sizing: border-box;
+            height: 100px;
+            object-fit: contain;
+          }
+        }
+
+        .flowText {
+          width: 60%;
+          font-size: 1.8rem;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  .double_item {
+    display: flex;
+    gap: 10px;
+
+    .itemText {
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       p {
-        font-size: 16px;
-        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
       }
     }
 
-    .arrow {
+    .flowItem {
       picture {
-        width: 50%;
-        margin: auto;
-      }
-    }
-
-    .imgIcon {
-      figure {
-        height: 16vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 30%;
+        min-width: 90px;
 
         img {
-          height: 100%;
-          object-fit: contain;
-          max-width: 100px;
-          max-height: 100px;
-          width: 100%;
+          margin: 0 auto;
+        }
+      }
+
+      .flowText {
+        width: 70%;
+
+        &.pl-15 {
+          padding-left: 15%;
         }
       }
     }
@@ -182,7 +211,7 @@
   padding-top: 50px;
 
   .border_size::after {
-    width: 560px;
+    width: min(100%, 560px);
     height: 40px;
     bottom: -14px;
     left: calc(50% - 280px);
@@ -405,11 +434,9 @@ footer {
 
     .wrapper {
       a.btn--green {
-
       }
 
       a.btn--green:hover {
-
       }
 
       a.btn-c {
@@ -418,13 +445,8 @@ footer {
       }
 
       .btn_link {
-
-
         a {
-
-
           span {
-
           }
         }
       }
@@ -484,52 +506,51 @@ footer {
     }
 
     .flow_wrapper {
-      display: flex;
-      flex-direction: column;
+      padding: 50px 0;
 
-      div:first-child {
-        figure {
-          img {
-            height: 60%;
+      &--container {
+        .flowItem {
+          flex-direction: column;
+          align-items: center;
+
+          picture {
+            img {
+              padding: 0;
+              margin: auto;
+              width: 50%;
+            }
+          }
+
+          .flowText {
+            font-size: 1.4rem;
+            justify-content: center;
+            padding-bottom: 1rem;
           }
         }
-      }
-
-      div:last-child {
-        figure {
-          align-items: end;
-        }
-      }
-
-      div {
-        width: 90%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        p {
-          font-size: 1.4rem;
-        }
-      }
-
-      .arrow {
-        picture {
-          display: flex;
-          justify-content: left;
-          width: 80%;
-        }
-      }
-
-      .imgIcon {
-        figure {
-          width: 30%;
-          img {
+        .double_item {
+          .itemText {
+            p {
+              font-size: 1.4rem;
+            }
           }
-        }
-        p {
-          width: 70%;
-          text-align: left;
-          text-indent: 5rem;
+
+          .flowItem {
+            picture {
+              min-width: initial;
+              img {
+                width: 100%;
+              }
+            }
+
+            .flowText {
+              font-size: 1.4rem;
+
+              &.pl-15 {
+                padding: 0;
+                justify-content: center;
+              }
+            }
+          }
         }
       }
     }
