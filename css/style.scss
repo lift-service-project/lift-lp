@@ -164,8 +164,10 @@
           width: 60%;
           font-size: 1.8rem;
           font-weight: bold;
+          align-items: start;
           display: flex;
-          align-items: center;
+          flex-direction: column;
+          justify-content: center;
         }
       }
     }
@@ -410,6 +412,7 @@
       .text_wrapper {
         width: 90%;
         margin: auto;
+        line-height: 1.8;
 
         .profile_text {
           padding-top: 2rem;
@@ -514,10 +517,13 @@ footer {
           align-items: center;
 
           picture {
+            padding: 10px 0;
+
             img {
               padding: 0;
               margin: auto;
               width: 50%;
+              height: 40px;
             }
           }
 
@@ -525,6 +531,7 @@ footer {
             font-size: 1.4rem;
             justify-content: center;
             padding-bottom: 1rem;
+            align-items: center;
           }
         }
         .double_item {

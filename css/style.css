@@ -193,14 +193,23 @@
   width: 60%;
   font-size: 1.8rem;
   font-weight: bold;
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+      -ms-flex-align: start;
+          align-items: start;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .flow_section .double_item {
   display: -webkit-box;
@@ -459,6 +468,7 @@
 .person_section .wrapper .text_container .text_wrapper {
   width: 90%;
   margin: auto;
+  line-height: 1.8;
 }
 .person_section .wrapper .text_container .text_wrapper .profile_text {
   padding-top: 2rem;
@@ -536,10 +546,14 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
+  .flow_section .flow_wrapper--container .flowItem picture {
+    padding: 10px 0;
+  }
   .flow_section .flow_wrapper--container .flowItem picture img {
     padding: 0;
     margin: auto;
     width: 50%;
+    height: 40px;
   }
   .flow_section .flow_wrapper--container .flowItem .flowText {
     font-size: 1.4rem;
@@ -548,6 +562,10 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
     padding-bottom: 1rem;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .flow_section .flow_wrapper--container .double_item .itemText p {
     font-size: 1.4rem;

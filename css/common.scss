@@ -54,13 +54,31 @@ button {
   gap: 10px;
   width: 100%;
 
-  .triangle__wrapper{
+  .triangle__wrapper {
     width: 50%;
   }
+}
+
+.pb-1rem {
+  padding-bottom: 1.4rem;
+}
+
+.py-1rem {
+  padding: 1.4rem 0;
 }
 
 @media screen and (max-width: 480px) {
   .bordered_h2 {
     font-size: 2.4rem;
+  }
+
+  .triangle__wrapper {
+    height: 30px;
+  }
+
+  .triangle_btm {
+    border-top: 16px solid #484848;
+    border-right: 16px solid transparent;
+    border-left: 16px solid transparent;
   }
 }
